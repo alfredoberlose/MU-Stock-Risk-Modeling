@@ -12,6 +12,7 @@ To model the behavior of catastrophic market drops on MU stock, we implemented t
 
 <p align="center">
   <img src="GEV-QQ.Plot.png" width="48%" alt="GEV QQ-Plot" />
+  </p>
   <img src="Mean-Residual-Plot.png" width="48%" alt="Mean Residual Life Plot" />
 </p>
 
