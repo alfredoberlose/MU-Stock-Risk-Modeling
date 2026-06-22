@@ -17,6 +17,8 @@ To model the behavior of catastrophic market drops on MU stock, we implemented t
   <img src="Mean-Residual-Plot.png" width="70%" alt="Mean Residual Life Plot" />
 </p>
 
+---
+
 ## 2. Volatility Forecasting: In-Sample vs. Rolling Out-of-Sample
 Asset returns exhibit severe volatility clustering. After diagnostic checks via ACF/PACF plots of squared returns, we estimated multiple conditional variance specifications. 
 
