@@ -27,8 +27,6 @@ To challenge the models under realistic trading conditions, we set up a **500-da
   <img src="InSample-OutOfSample.png" width="90%" alt="In-Sample vs Out-of-Sample Volatility History" />
 </p>
 
----
-
 ## 3. Value at Risk (VaR) Models & Backtesting Evaluation
 We extracted daily 5% VaR forecasts utilizing three distinct methodological philosophies:
 1. **Non-Parametric (Historical Simulation):** Rolling windows of 100, 500, and 1000 days.
