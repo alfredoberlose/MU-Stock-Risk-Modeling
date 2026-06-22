@@ -11,8 +11,8 @@ To model the behavior of catastrophic market drops on MU stock, we implemented t
 * **Peaks-Over-Threshold Approach (POT):** We used the *Mean Residual Life Plot* to visually determine an optimal threshold ($u = 0.04$). Beyond this boundary, extreme excesses were modeled using a Generalized Pareto Distribution (GPD) to calculate tail-specific VaR and Expected Shortfall (ES).
 
 <p align="center">
-  <img src="static/GEV-QQ.Plot.png" width="48%" alt="GEV QQ-Plot" />
-  <img src="static/Mean-Residual-Plot.png" width="48%" alt="Mean Residual Life Plot" />
+  <img src="GEV-QQ.Plot.png" width="48%" alt="GEV QQ-Plot" />
+  <img src="Mean-Residual-Plot.png" width="48%" alt="Mean Residual Life Plot" />
 </p>
 
 ---
@@ -23,7 +23,7 @@ Asset returns exhibit severe volatility clustering. After diagnostic checks via 
 To challenge the models under realistic trading conditions, we set up a **500-day rolling Out-of-Sample (OOS) forecasting window**. We compared a Gaussian GARCH(1,1) against a Student's t GARCH(1,1) to analyze how capturing heavy-tailed error distributions impacts predictive accuracy (evaluated through MAE, RMSE, and OOS $R^2$).
 
 <p align="center">
-  <img src="static/InSample-OutOfSample.png" width="90%" alt="In-Sample vs Out-of-Sample Volatility History" />
+  <img src="InSample-OutOfSample.png" width="90%" alt="In-Sample vs Out-of-Sample Volatility History" />
 </p>
 
 ---
@@ -38,7 +38,7 @@ We extracted daily 5% VaR forecasts utilizing three distinct methodological phil
 The standard backtesting suite evaluates the traditional tradeoff between window length and adaptability. Long windows (HS 1000) capture accurate unconditional counts but fail independence tests due to severe exception clustering during market crises.
 
 <p align="center">
-  <img src="static/Backtesting-VaR.png" width="90%" alt="VaR Backtesting Comparison" />
+  <img src="Backtesting-VaR.png" width="90%" alt="VaR Backtesting Comparison" />
 </p>
 
 ---
@@ -51,5 +51,5 @@ We subjected our top-performing dynamic models—the parametric EWMA and the Sem
 * **EWMA achieved superior independence scores** (Regression F p-value: `0.7468` vs GARCH: `0.3978`). This proves that a highly reactive, locally-weighted parameter is marginally more efficient at neutralizing the volatility clustering of tech equities like MU compared to static, full-sample GARCH filters.
 
 <p align="center">
-  <img src="static/Semi-Parametric-VaR.png" width="90%" alt="EWMA vs GARCH Semi-Parametric Violations" />
+  <img src="Semi-Parametric-VaR.png" width="90%" alt="EWMA vs GARCH Semi-Parametric Violations" />
 </p>
