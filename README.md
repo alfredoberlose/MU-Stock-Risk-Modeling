@@ -11,11 +11,11 @@ To model the behavior of catastrophic market drops on MU stock, we implemented t
 * **Peaks-Over-Threshold Approach (POT):** We used the *Mean Residual Life Plot* to visually determine an optimal threshold ($u = 0.04$). Beyond this boundary, extreme excesses were modeled using a Generalized Pareto Distribution (GPD) to calculate tail-specific VaR and Expected Shortfall (ES).
 
 <p align="center">
-  <img src="GEV-QQ.Plot.png" width="48%" alt="GEV QQ-Plot" />
-  </p>
-  <img src="Mean-Residual-Plot.png" width="48%" alt="Mean Residual Life Plot" />
+  <img src="GEV-QQ.Plot.png" width="70%" alt="GEV QQ-Plot" />
+  <br />
+  <br />
+  <img src="Mean-Residual-Plot.png" width="70%" alt="Mean Residual Life Plot" />
 </p>
-
 ---
 
 ## 2. Volatility Forecasting: In-Sample vs. Rolling Out-of-Sample
